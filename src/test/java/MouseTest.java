@@ -25,9 +25,10 @@ public class MouseTest {
         assertTrue(mouse.click());
     }
 
+
     @Test
     public void canSendData(){
-        assertEquals("ClickClick", mouse.sendData("ClickClick"));
+        assertEquals("Input equals ClickClick", mouse.sendData("ClickClick"));
     }
-    
+
 }

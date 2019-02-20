@@ -20,4 +20,10 @@ public class Mouse extends InputDevice {
     public Boolean click(){
         return true;
     }
+
+    @Override
+    public String sendData(String coords){
+        return move(coords);
+
+    }
 }

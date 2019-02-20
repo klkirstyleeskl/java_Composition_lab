@@ -1,6 +1,8 @@
 package device_management;
 
-public abstract class InputDevice {
+import behaviours.IInput;
+
+public abstract class InputDevice implements IInput {
 
     private String model;
     private String type;
@@ -19,7 +21,12 @@ public abstract class InputDevice {
         return type;
     }
 
+    public String preInputData(String data){
+        return "Input equals " + data;
+
+    }
+
     public String sendData(String data){
-        return data;
+        return preInputData(data);
     }
 }
